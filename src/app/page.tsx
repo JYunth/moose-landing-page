@@ -1,15 +1,15 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-//import { HeroSection } from "@/components/HeroSection";
+import HeroSection from "@/components/HeroSection";
 import { Finalcard } from "@/components/Finalcard";
-import { bentogrid } from "@/components/bentogrid";
+// import { bentogrid } from "@/components/bentogrid";
 import { CompareDemo } from "@/components/CompareDemo";
 import { TypewriterEffectDemo } from "@/components/typewriter";
 import FeaturesSectionDemo from "@/components/FeaturesSectionDemo";
 
 export default function Home() {
   return (
-    <main className = "bg-black min-h-screen">
+    <main className="bg-black min-h-screen">
 
       {/* HEADER SECTION */}
       <div id="header">
@@ -17,32 +17,34 @@ export default function Home() {
       </div>
 
       {/*TODO: HERO SECTION*/}
-      {/* <div>
-      <HeroSection />
-      </div> */}
+      <div id="hero">
+        <HeroSection />
+      </div>
+
       {/* <div>
         <bentogrid />
       </div> */}
-       {/*compare*/}
-       <div>
-       <FeaturesSectionDemo />
-       </div>
-       <div>
-         <TypewriterEffectDemo />
+      {/*compare*/}
+      <div>
+        <FeaturesSectionDemo />
       </div>
       <div>
-       <CompareDemo />
+        <TypewriterEffectDemo />
       </div>
-      
+      <div>
+        <CompareDemo />
+      </div>
+
       {/*Finalcard*/}
       <div>
-       <Finalcard />
+        <Finalcard />
       </div>
+
       {/* FOOTER SECTION */}
       <div id="footer">
         <Footer />
       </div>
-      
+
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -12,6 +13,16 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const playwrite = localFont({
+  src: "./fonts/PlaywriteDKLoopet-VariableFont_wght.woff",
+  variable: "--font-playwrite",
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Moose",
@@ -26,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playwrite.variable} ${inter.className} antialiased`}
       >
         {children}
       </body>

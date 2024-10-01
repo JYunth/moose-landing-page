@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -13,10 +12,6 @@ export default function Footer() {
                         width = {500}
                         className = ""
                     />
-                </div>
-                <div className = "flex flex-col flex-1">
-                    <p className = "font-[family-name:var(--font-geist-sans)] font-bold text-6xl text-center text-white">Follow our socials</p>
-                    <p>duuuuude what</p>
                 </div>
             </div>
             <div className = "flex flex-row justify-between p-4">

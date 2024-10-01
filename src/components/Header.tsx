@@ -13,8 +13,8 @@ export default function Header() {
             />
 
             <Link href="/#footer">
-                <button className = "border border-white text-white cursor-pointer px-10 py-2 m-4 font-[family-name:var(--font-geist-sans)] font-semibold text-lg hover:text-black hover:bg-white transition-all duration-300">
-                    Contact us
+                <button className = "border border-white text-white cursor-pointer px-10 py-2 m-4 font-inter font-semibold text-lg hover:text-black hover:bg-white transition-all duration-300 uppercase">
+                    Get in Touch 
                 </button>
             </Link>
         </div>

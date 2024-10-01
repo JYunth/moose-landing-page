@@ -75,4 +75,13 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  .parentContainer {
+    position: relative;
+  }
+  
+  .rightCornerDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

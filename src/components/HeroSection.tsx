@@ -42,9 +42,24 @@ export default function HeroSection() {
                 <p className='font-[family-name:var(--font-playwrite)] font-medium text-white text-7xl text-center'>flawless</p>
                 <p className='font-inter text-white text-5xl p-10 text-center uppercase'>clothing mockups, at a fraction of the price</p>
             </div>
-            <div className="overflow-hidden w-2/3 my-auto">
+            <motion.div
+                className="overflow-hidden w-2/3 my-auto"
+
+                initial = {{
+                    translateX: "100%",
+                }}
+                
+                animate = {{
+                    translateX: "0%",
+                }}
+
+                transition = {{
+                    duration: 2,
+                    ease: "easeInOut",
+                }}
+            >
                 <div ref={containerRef} className="flex">
-                    <motion.div className="flex" animate={control1}>
+                    <motion.div className="flex overflox-x-hidden" animate={control1}>
                         {[...images, ...images].map((src, index) => (
                             <div key={index} className="flex-shrink-0 mx-4 items-center justify-center">
                                 <Image
@@ -58,7 +73,7 @@ export default function HeroSection() {
                         ))}
                     </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

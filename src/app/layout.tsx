@@ -35,9 +35,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth overflow-x-hidden bg-black">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playwrite.variable} ${inter.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playwrite.variable} ${inter.className} subpixel-antialiased`}
       >
         {children}
       </body>

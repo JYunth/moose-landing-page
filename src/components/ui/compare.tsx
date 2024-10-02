@@ -210,10 +210,10 @@ export const Compare = ({
               <Image
                 alt="first image"
                 src={firstImage}
-                height = {100}
-                width = {100}
+                height = {250}
+                width = {250}
                 className={cn(
-                  "absolute inset-0  z-20 rounded-2xl flex-shrink-0 w-full h-full select-none",
+                  "absolute inset-0  z-20 rounded-2xl flex-shrink-0 min-w-full min-h-full select-none",
                   firstImageClassName
                 )}
                 draggable={false}

@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { Finalcard } from "@/components/Finalcard";
 // import { bentogrid } from "@/components/bentogrid";
-import { CompareDemo } from "@/components/CompareDemo";
+import AboutSection from "@/components/AboutSection";
 import { TypewriterEffectDemo } from "@/components/typewriter";
 import FeaturesSectionDemo from "@/components/FeaturesSectionDemo";
 
@@ -16,9 +16,14 @@ export default function Home() {
         <Header />
       </div>
 
-      {/*TODO: HERO SECTION*/}
-      <div id="hero">
+      {/*HERO SECTION*/}
+      <div id="hero" className = "h-screen">
         <HeroSection />
+      </div>
+
+      {/*ABOUT SECTION*/}
+      <div id="about" className = "h-screen">
+        <AboutSection />
       </div>
 
       {/* <div>
@@ -30,9 +35,6 @@ export default function Home() {
       </div>
       <div>
         <TypewriterEffectDemo />
-      </div>
-      <div>
-        <CompareDemo />
       </div>
 
       {/*Finalcard*/}

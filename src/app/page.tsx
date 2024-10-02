@@ -17,12 +17,12 @@ export default function Home() {
       </div>
 
       {/*HERO SECTION*/}
-      <div id="hero" className = "h-screen">
+      <div id="hero" className="h-screen">
         <HeroSection />
       </div>
 
       {/*ABOUT SECTION*/}
-      <div id="about" className = "h-screen">
+      <div id="about" className="h-screen">
         <AboutSection />
       </div>
 
@@ -31,6 +31,7 @@ export default function Home() {
       </div> */}
       {/*compare*/}
       <div>
+        <p className="text-6xl font-inter font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-white text-center">Why MooseAI</p>
         <FeaturesSectionDemo />
       </div>
       <div>
@@ -38,7 +39,7 @@ export default function Home() {
       </div>
 
       {/*Finalcard*/}
-      <div>
+      <div className = "max-h-screen mb-10">
         <Finalcard />
       </div>
 

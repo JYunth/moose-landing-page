@@ -14,11 +14,8 @@ export default function Footer() {
                     />
                 </div>
             </div>
-            <div className = "flex flex-row justify-between p-4">
-                <p className = "font-[family-name:var(--font-geist-sans)] font-light text-xl text-center text-white">smthsmth@smth.com</p>
-                <p className = "font-[family-name:var(--font-geist-sans)] font-light text-xl text-center text-white">instagram link</p>
-                <p className = "font-[family-name:var(--font-geist-sans)] font-light text-xl text-center text-white">xwitter</p>
-                <p className = "font-[family-name:var(--font-geist-sans)] font-light text-xl text-center text-white">made with love by join, allwin, super saiyan, harizz and andy</p>
+            <div className = "flex flex-row justify-center p-4 w-screen">
+                <p className = "font-[family-name:var(--font-geist-sans)] font-semibold w-full text-xl text-center text-black bg-white p-4 mb-0 uppercase">made with love by jheyanth, allwin, seyan, harish and andy <span className="text-2xl">♥</span></p>
             </div>
         </div>
     );
